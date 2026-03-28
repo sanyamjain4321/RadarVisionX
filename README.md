@@ -1,22 +1,5 @@
 # SAR Ship Detection — Production YOLO Integration
 
-## Quick Start (3 commands)
-
-```bat
-cd C:\Users\malvi\Downloads\hackathon_repo_v2
-pip install -r backend/requirements.txt -q
-start_all.bat
-```
-
-`start_all.bat` does everything automatically:
-1. Checks if `models/yolov8_sar.pt` exists
-2. If not → prepares dataset → trains YOLOv8 → exports ONNX
-3. Starts FastAPI backend (`localhost:8000`)
-4. Starts frontend server (`localhost:5500`)
-5. Opens browser
-
----
-
 ## Project Structure
 
 ```
