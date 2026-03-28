@@ -1,0 +1,30 @@
+# SAR Ship Detection Dataset — YOLOv8 Format
+# ============================================
+# NOTE: train.py auto-generates data_abs.yaml with absolute paths.
+# This file is a template. The actual training uses data_abs.yaml.
+#
+#   training/dataset/
+#   ├── images/
+#   │   ├── train/   ← training images (.png / .jpg)
+#   │   └── val/     ← validation images
+#   └── labels/
+#       ├── train/   ← YOLO .txt label files (one per image)
+#       └── val/
+
+path: dataset
+train: images/train
+val:   images/val
+
+# Classes
+nc: 1
+names:
+  0: ship
+
+# Dataset notes
+# ─────────────
+# SSDD (SAR Ship Detection Dataset): ~1160 SAR images, ~2456 ship instances
+#   Source: https://github.com/TencentYoutuResearch/ObjectDetection-SSDD
+#   Annotation format: XML (PascalVOC) → use training/prepare_ssdd.py to convert
+#
+# SAR-Ship dataset: ~43790 chips, 59535 ship instances
+#   Source: https://github.com/CAESAR-Radi/SAR-Ship-Dataset
