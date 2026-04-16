@@ -1,0 +1,17 @@
+# SAR Ship Detection — Training Requirements
+# Install with: pip install -r training/requirements.txt
+
+ultralytics>=8.2.0        # YOLOv8 training + ONNX export
+opencv-python>=4.9.0      # image preprocessing
+numpy>=1.24.0             # array ops
+Pillow>=10.0.0            # image I/O
+requests>=2.31.0          # dataset auto-download
+tqdm>=4.66.0              # progress bars
+
+# ONNX export (needed for browser inference)
+onnx>=1.16.0
+onnxsim>=0.4.36           # model simplification for browser compat
+
+# Optional — for GPU training
+# torch>=2.0.0
+# torchvision>=0.15.0
